@@ -1,0 +1,115 @@
+════════════════════════════════════════════════════════════════
+  Config audit   models/   (40 files)
+════════════════════════════════════════════════════════════════
+
+⚠  FLAGGED
+
+  v3.0.0     3x3_sara.192.v_3.0.0_config.json
+             • [NO_ALBERT]
+             • [NO_PROJ_LAYER(embedding_proj, synbedding_proj)]
+  v3.0.1     3x3_sara.256.v_3.0.1_config.json
+             • [ABORTED 4 epochs]
+             • [NO_ALBERT]
+             • [NO_PROJ_LAYER(embedding_proj, synbedding_proj)]
+  v3.0.2     3x3_sara.256.v_3.0.2_config.json
+             • [ABORTED 1 epochs]
+             • [NO_ALBERT]
+             • [NO_PROJ_LAYER(embedding_proj, synbedding_proj)]
+  v3.0.3     3x3_sara.256.v_3.0.3_config.json
+             • [ABORTED 8 epochs]
+             • [NO_ALBERT]
+             • [NO_PROJ_LAYER(embedding_proj, synbedding_proj)]
+  v3.0.4     3x3_sara.256.v_3.0.4_config.json
+             • [ABORTED 3 epochs]
+             • [NO_ALBERT]
+             • [NO_PROJ_LAYER(embedding_proj, synbedding_proj)]
+  v3.0.8     3x3_sara.256.v_3.0.8_config.json
+             • [NO_ALBERT]
+             • [NO_PROJ_LAYER(embedding_proj, synbedding_proj)]
+  v3.0.9     1x1_sara.64.v_3.0.9_config.json
+             • [NO_ALBERT]
+             • [NO_PROJ_LAYER(embedding_proj, synbedding_proj)]
+  v3.0.10    2x2_sara.192.v_3.0.10_config.json
+             • [ABORTED 2 epochs]
+             • [NO_ALBERT]
+             • [NO_PROJ_LAYER(embedding_proj, synbedding_proj)]
+  v3.0.11    3x3_sara.256.v_3.0.11_config.json
+             • [ABORTED 5 epochs]
+             • [NO_ALBERT]
+             • [NO_PROJ_LAYER(embedding_proj, synbedding_proj)]
+  v3.0.12    3x3_sara.256.v_3.0.12_config.json
+             • [ABORTED 18 epochs]
+             • [NO_ALBERT]
+             • [NO_PROJ_LAYER(embedding_proj, synbedding_proj)]
+  v3.0.13    1x1_sara.64.v_3.0.13_config.json
+             • [ABORTED 56 epochs]
+             • [NO_ALBERT]
+             • [NO_PROJ_LAYER(embedding_proj, synbedding_proj)]
+  v3.0.14    3x3_sara.256.v_3.0.14_config.json
+             • [ABORTED 2 epochs]
+             • [NO_ALBERT]
+             • [NO_PROJ_LAYER(embedding_proj, synbedding_proj)]
+  v3.0.15    3x3_sara.256.v_3.0.15_config.json
+             • [ABORTED 21 epochs]
+             • [NO_ALBERT]
+             • [NO_PROJ_LAYER(embedding_proj, synbedding_proj)]
+  v3.0.19    4x4_sara.192.v_3.0.19_config.json
+             • [ABORTED 25 epochs]
+             • [NO_ALBERT]
+             • [NO_PROJ_LAYER(embedding_proj, synbedding_proj)]
+  v3.0.20    3x3_sara.256.v_3.0.20_config.json
+             • [ABORTED 37 epochs]
+             • [NO_ALBERT]
+             • [NO_PROJ_LAYER(embedding_proj, synbedding_proj)]
+  v3.0.21    3x3_sara.256.v_3.0.21_config.json
+             • [NO_ALBERT]
+             • [NO_PROJ_LAYER(synbedding_proj)]
+  v3.0.22    3x3_sara.256.v_3.0.22_config.json
+             • [ABORTED 5 epochs]
+  v3.0.23    3x3_sara.256.v_3.0.23_config.json
+             • [ABORTED 6 epochs]
+  v3.0.25    6x6_sara.256.v_3.0.25_config.json
+             • [ABORTED 2 epochs]
+  v3.0.29    4x4_sara.320.v_3.0.29_config.json
+             • [ABORTED 6 epochs]
+  v3.0.31    3x3_sara.256.v_3.0.31_config.json
+             • [ABORTED 6 epochs]
+  v3.0.32    3x3_sara.256.v_3.0.32_config.json
+             • [ABORTED 6 epochs]
+  v3.0.33    3x3_sara.256.v_3.0.33_config.json
+             • [ABORTED 11 epochs]
+  v3.0.34    4x4_sara.256.v_3.0.34_config.json
+             • [ABORTED 18 epochs]
+  v3.0.35    3x3_sara.256.v_3.0.35_config.json
+             • [ABORTED 39 epochs]
+  v3.0.36    3x3_sara.256.v_3.0.36_config.json
+             • [ABORTED 1 epochs]
+  v3.0.37    3x3_sara.256.v_3.0.37_config.json
+             • [ABORTED 1 epochs]
+  v3.0.38    1x1_sara.64.v_3.0.38_config.json
+             • [ABORTED 38 epochs]
+  v3.0.39    4x4_sara.256.v_3.0.39_config.json
+             • [ABORTED 42 epochs]
+  v3.0.41    4x5_sara.256.v_3.0.41_config.json
+             • [ABORTED 22 epochs]
+  v3.0.42    3x3_sara.256.v_3.0.42_config.json
+             • [ABORTED 3 epochs]
+  v3.0.43    3x3_sara.256.v_3.0.43_config.json
+             • [ABORTED 2 epochs]
+  v3.0.44    3x3_sara.256.v_3.0.44_config.json
+             • [ABORTED 2 epochs]
+  v3.0.45    3x3_sara.256.v_3.0.45_config.json
+             • [ABORTED 1 epochs]
+  v3.0.46    4x4_sara.368.v_3.0.46_config.json
+             • [ABORTED 13 epochs]
+  v3.0.47    4x4_sara.320.v_3.0.47_config.json
+             • [ABORTED 8 epochs]
+  v3.0.48    3x3_sara.256.v_3.0.48_config.json
+             • [ABORTED 2 epochs]
+  v3.0.49    3x3_sara.256.v_3.0.49_config.json
+             • [ABORTED 10 epochs]
+  v3.0.50    3x3_sara.256.v_3.0.50_config.json
+             • [ABORTED 7 epochs]
+
+✓  CLEAN
+  v3.0.51    3x3_sara.256.v_3.0.51_config.json

@@ -1,0 +1,148 @@
+{
+    "model": "models/3x3_sara.256.v_3.0.48.h5",
+    "version": "3.0.48",
+    "started_at": "2026-05-26 16:43:27",
+    "saved_at": "2026-05-26 17:06:29",
+    "epochs": 2,
+    "parameters": 4200847,
+    "dataset_size": 61577344,
+    "vocab_size": 8456,
+    "chinchilla": 14.658316287167802,
+    "dff2embedding": 4,
+    "params2token": 496.7889072847682,
+    "params2context": 3.8811633381622515,
+    "max_len": 128,
+    "dec_layers": 3,
+    "enc_layers": 3,
+    "embedding_dim": 256,
+    "effective_dff": 1024,
+    "ffn_type": "ShutterGLU",
+    "enc_proj_factor": 0.5,
+    "dec_proj_factor": 0.5,
+    "cross_proj_factor": 0.75,
+    "parallel_kernel_size": 6,
+    "parallel_expand_ratio": 1.0,
+    "albert_emb_dim": 64,
+    "albert_syn_emb_dim": 32,
+    "num_heads": 8,
+    "batch_size": 256,
+    "dropout_rate_encoder": 0.1,
+    "dropout_rate_decoder": 0.1,
+    "dropout_rate_cross": 0.1,
+    "gpu_mem": 23.0,
+    "finetune_enabled": true,
+    "finetuned": false,
+    "tokenizer_path": "qa_tokenizer.json",
+    "gpus_used": 1,
+    "gpu_name": "Quadro P6000",
+    "mixed_precision": "float32",
+    "cpu_threads": 12,
+    "steps_per_epoch": 1879,
+    "training_time_hours": 0.0,
+    "weights_hash": "",
+    "active_profile": "dff bench",
+    "optimizer": "Adam",
+    "optimizer_beta1": 0.9,
+    "optimizer_beta2": 0.98,
+    "optimizer_epsilon": 1e-09,
+    "sofa_window_size": 64,
+    "sofa_lr": 0.025,
+    "sofa_momentum": 0.9,
+    "sofa_alpha": 0.05,
+    "sofa_weights": [
+        0.3,
+        0.7
+    ],
+    "p_flop_total": 0,
+    "p_flop_epoch": 0.0,
+    "watt": 85.62556594517966,
+    "euro": 0,
+    "layer_names": [
+        {
+            "name": "embedding",
+            "params": 541184,
+            "type": "Embedding"
+        },
+        {
+            "name": "embedding_proj",
+            "params": 16384,
+            "type": "Dense"
+        },
+        {
+            "name": "synbedding",
+            "params": 270592,
+            "type": "Embedding"
+        },
+        {
+            "name": "synbedding_proj",
+            "params": 8192,
+            "type": "Dense"
+        },
+        {
+            "name": "synbedding_norm",
+            "params": 512,
+            "type": "LayerNormalization"
+        },
+        {
+            "name": "embedding_norm",
+            "params": 256,
+            "type": "RMSNorm"
+        },
+        {
+            "name": "encoder_block_0",
+            "params": 533383,
+            "type": "TransformerBlock_e"
+        },
+        {
+            "name": "encoder_block_1",
+            "params": 533383,
+            "type": "TransformerBlock_e"
+        },
+        {
+            "name": "encoder_block_2",
+            "params": 533383,
+            "type": "TransformerBlock_e"
+        },
+        {
+            "name": "cross_attention_cache",
+            "params": 156496,
+            "type": "DecoderCrossAttentionCache"
+        },
+        {
+            "name": "decoder_block_0",
+            "params": 535694,
+            "type": "TransformerBlock_d"
+        },
+        {
+            "name": "decoder_block_1",
+            "params": 535694,
+            "type": "TransformerBlock_d"
+        },
+        {
+            "name": "decoder_block_2",
+            "params": 535694,
+            "type": "TransformerBlock_d"
+        }
+    ],
+    "loss": [
+        3.8437,
+        2.8169
+    ],
+    "validation_loss": [
+        3.0469,
+        2.3834
+    ],
+    "accuracy": [
+        0.3976,
+        0.5067
+    ],
+    "validation_accuracy": [
+        0.4648,
+        0.5781
+    ],
+    "learning_rate": [
+        0.0005156842526048422,
+        0.0005094925290904939
+    ],
+    "useless_note": "This config file is meant to be human-readable and contains all relevant information about the training run. It can be used for analysis, comparison, and reproducibility purposes."
+}

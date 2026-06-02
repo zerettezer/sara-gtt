@@ -1,0 +1,131 @@
+{
+    "model": "models/3x3_sara.256.v_3.0.4.h5",
+    "version": "3.0.4",
+    "started_at": "2026-05-17 21:57:42",
+    "saved_at": "2026-05-17 22:31:36",
+    "epochs": 3,
+    "parameters": 8429328,
+    "dataset_size": 58973440,
+    "vocab_size": 8808,
+    "chinchilla": 6.996220813806272,
+    "dff2embedding": 4,
+    "params2token": 957.0081743869209,
+    "params2context": 7.47662636239782,
+    "max_len": 128,
+    "dec_layers": 3,
+    "enc_layers": 3,
+    "embedding_dim": 256,
+    "effective_dff": 1024,
+    "ffn_type": "ShutterGLU",
+    "enc_proj_factor": 0.5,
+    "dec_proj_factor": 0.5,
+    "cross_proj_factor": 0.75,
+    "parallel_kernel_size": 3,
+    "parallel_expand_ratio": 1.0,
+    "num_heads": 8,
+    "batch_size": 256,
+    "dropout_rate_encoder": 0.1,
+    "dropout_rate_decoder": 0.1,
+    "dropout_rate_cross": 0.1,
+    "gpu_mem": 23.0,
+    "finetune_enabled": true,
+    "finetuned": false,
+    "tokenizer_path": "qa_tokenizer.json",
+    "gpus_used": 1,
+    "gpu_name": "Quadro P6000",
+    "mixed_precision": "float32",
+    "cpu_threads": 12,
+    "steps_per_epoch": 1799,
+    "training_time_hours": 0.0,
+    "weights_hash": "",
+    "active_profile": "dff bench",
+    "optimizer": "Adam",
+    "optimizer_beta1": 0.9,
+    "optimizer_beta2": 0.98,
+    "optimizer_epsilon": 1e-09,
+    "sofa_window_size": 64,
+    "sofa_lr": 0.025,
+    "sofa_momentum": 0.9,
+    "sofa_alpha": 0.05,
+    "sofa_weights": [
+        0.3,
+        0.7
+    ],
+    "p_flop_total": 0,
+    "p_flop_epoch": 0.0,
+    "watt": 131.05058254933542,
+    "euro": 0,
+    "layer_names": [
+        {
+            "name": "embedding",
+            "params": 2254848,
+            "type": "Embedding"
+        },
+        {
+            "name": "synbedding_norm",
+            "params": 256,
+            "type": "RMSNorm"
+        },
+        {
+            "name": "encoder_block_0",
+            "params": 501111,
+            "type": "TransformerBlock_e"
+        },
+        {
+            "name": "encoder_block_1",
+            "params": 501111,
+            "type": "TransformerBlock_e"
+        },
+        {
+            "name": "encoder_block_2",
+            "params": 501111,
+            "type": "TransformerBlock_e"
+        },
+        {
+            "name": "cross_attention_cache",
+            "params": 123200,
+            "type": "DecoderCrossAttentionCache"
+        },
+        {
+            "name": "decoder_block_0",
+            "params": 764281,
+            "type": "TransformerBlock_d"
+        },
+        {
+            "name": "decoder_block_1",
+            "params": 764281,
+            "type": "TransformerBlock_d"
+        },
+        {
+            "name": "decoder_block_2",
+            "params": 764281,
+            "type": "TransformerBlock_d"
+        }
+    ],
+    "loss": [
+        4.6904,
+        3.6911,
+        3.2895
+    ],
+    "validation_loss": [
+        3.794,
+        3.4023,
+        2.8036
+    ],
+    "accuracy": [
+        0.2906,
+        0.4099,
+        0.454
+    ],
+    "validation_accuracy": [
+        0.4043,
+        0.416,
+        0.4961
+    ],
+    "learning_rate": [
+        0.0005133507074788213,
+        0.0005726985400542617,
+        0.0005264907376840711
+    ],
+    "useless_note": "This config file is meant to be human-readable and contains all relevant information about the training run. It can be used for analysis, comparison, and reproducibility purposes."
+}

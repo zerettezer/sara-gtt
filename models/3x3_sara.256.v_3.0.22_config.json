@@ -1,0 +1,163 @@
+{
+    "model": "models/3x3_sara.256.v_3.0.22.h5",
+    "version": "3.0.22",
+    "started_at": "2026-05-20 21:24:46",
+    "saved_at": "2026-05-20 22:27:11",
+    "epochs": 5,
+    "parameters": 4744108,
+    "dataset_size": 60994816,
+    "vocab_size": 7924,
+    "chinchilla": 12.856961941001343,
+    "dff2embedding": 4,
+    "params2token": 598.701161029783,
+    "params2context": 4.677352820545179,
+    "max_len": 128,
+    "dec_layers": 3,
+    "enc_layers": 3,
+    "embedding_dim": 256,
+    "effective_dff": 1024,
+    "ffn_type": "ShutterGLU",
+    "enc_proj_factor": 0.5,
+    "dec_proj_factor": 0.5,
+    "cross_proj_factor": 0.75,
+    "parallel_kernel_size": 6,
+    "parallel_expand_ratio": 1.0,
+    "albert_emb_dim": 64,
+    "albert_syn_emb_dim": 32,
+    "num_heads": 8,
+    "batch_size": 256,
+    "dropout_rate_encoder": 0.1,
+    "dropout_rate_decoder": 0.1,
+    "dropout_rate_cross": 0.1,
+    "gpu_mem": 23.0,
+    "finetune_enabled": true,
+    "finetuned": false,
+    "tokenizer_path": "qa_tokenizer.json",
+    "gpus_used": 1,
+    "gpu_name": "Quadro P6000",
+    "mixed_precision": "float32",
+    "cpu_threads": 12,
+    "steps_per_epoch": 1861,
+    "training_time_hours": 0.0,
+    "weights_hash": "",
+    "active_profile": "dff bench",
+    "optimizer": "Adam",
+    "optimizer_beta1": 0.9,
+    "optimizer_beta2": 0.98,
+    "optimizer_epsilon": 1e-09,
+    "sofa_window_size": 64,
+    "sofa_lr": 0.025,
+    "sofa_momentum": 0.9,
+    "sofa_alpha": 0.05,
+    "sofa_weights": [
+        0.3,
+        0.7
+    ],
+    "p_flop_total": 0,
+    "p_flop_epoch": 0.0,
+    "watt": 243.35735657959492,
+    "euro": 0,
+    "layer_names": [
+        {
+            "name": "embedding",
+            "params": 507136,
+            "type": "Embedding"
+        },
+        {
+            "name": "embedding_proj",
+            "params": 16384,
+            "type": "Dense"
+        },
+        {
+            "name": "synbedding",
+            "params": 253568,
+            "type": "Embedding"
+        },
+        {
+            "name": "synbedding_proj",
+            "params": 8192,
+            "type": "Dense"
+        },
+        {
+            "name": "synbedding_norm",
+            "params": 512,
+            "type": "LayerNormalization"
+        },
+        {
+            "name": "embedding_norm",
+            "params": 256,
+            "type": "RMSNorm"
+        },
+        {
+            "name": "encoder_block_0",
+            "params": 501111,
+            "type": "TransformerBlock_e"
+        },
+        {
+            "name": "encoder_block_1",
+            "params": 501111,
+            "type": "TransformerBlock_e"
+        },
+        {
+            "name": "encoder_block_2",
+            "params": 501111,
+            "type": "TransformerBlock_e"
+        },
+        {
+            "name": "cross_attention_cache",
+            "params": 156496,
+            "type": "DecoderCrossAttentionCache"
+        },
+        {
+            "name": "decoder_block_0",
+            "params": 766077,
+            "type": "TransformerBlock_d"
+        },
+        {
+            "name": "decoder_block_1",
+            "params": 766077,
+            "type": "TransformerBlock_d"
+        },
+        {
+            "name": "decoder_block_2",
+            "params": 766077,
+            "type": "TransformerBlock_d"
+        }
+    ],
+    "loss": [
+        3.8285,
+        2.8464,
+        2.5359,
+        2.3574,
+        2.1872
+    ],
+    "validation_loss": [
+        2.9751,
+        2.5357,
+        2.3729,
+        2.0379,
+        2.0392
+    ],
+    "accuracy": [
+        0.3993,
+        0.503,
+        0.5405,
+        0.5654,
+        0.589
+    ],
+    "validation_accuracy": [
+        0.5039,
+        0.5215,
+        0.5801,
+        0.6152,
+        0.6152
+    ],
+    "learning_rate": [
+        0.0004651563649531454,
+        0.0004361374012660235,
+        0.00050086819101125,
+        0.0004729779902845621,
+        0.0005160995060577989
+    ],
+    "useless_note": "This config file is meant to be human-readable and contains all relevant information about the training run. It can be used for analysis, comparison, and reproducibility purposes."
+}
