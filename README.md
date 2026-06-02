@@ -143,7 +143,7 @@ Some configs were written at the start of a training run that was interrupted be
 
 Known examples: `v3.0.2`, `v3.0.13`, `v3.0.38`. These runs have no corresponding `.h5` checkpoint and cannot be used for evaluation or comparison.
 
-### Pre-ALBERT Architecture Configs (v3.0.0 – v3.0.11)
+### Pre-ALBERT Architecture Configs (v3.0.0 – v3.0.21)
 Configs from the early phase of development predate the introduction of ALBERT-style factorized embeddings. They are missing several fields that were added later:
 - `albert_emb_dim` / `albert_syn_emb_dim` — not present
 - `embedding_proj` / `synbedding_proj` layers — absent from `layer_names`
